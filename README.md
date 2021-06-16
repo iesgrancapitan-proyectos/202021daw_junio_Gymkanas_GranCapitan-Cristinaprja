@@ -3,4 +3,4 @@ El Equipo educativo, en el pasado curso 2019/2020, realizón listado de peronaje
 
 Debido a tu tamaño, pasan desapercibidos y pocos alumnos los han leido. Para solucionar este problema nace este proyecto llamado Gymkanas Gran Capitán.
 
-Para conocer más sobre él, acceda a la Wiki haciendo click [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki](aquí). 
+Para conocer más sobre él, acceda a la Wiki haciendo click [aquí](https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki). 
