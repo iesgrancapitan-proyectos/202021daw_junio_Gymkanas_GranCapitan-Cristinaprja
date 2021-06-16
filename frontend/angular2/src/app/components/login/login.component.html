@@ -1,0 +1,11 @@
+<app-home></app-home>
+<mat-card *ngIf="!isLogued" class="align-items-center">
+    <mat-card-header>
+        <mat-card-title>Bienvenido a Gymkanas</mat-card-title>
+        <mat-card-subtitle>IES Gran Capitán</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content >
+        <p>Para empezar necesitas estar logueado</p>
+        <button mat-raised-button color="accent"(click)="login()">Login</button>
+    </mat-card-content>
+</mat-card>
