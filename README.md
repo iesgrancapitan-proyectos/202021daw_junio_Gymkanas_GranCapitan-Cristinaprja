@@ -11,8 +11,8 @@ Aquí encontrarás toda la infomación relacionada con el Proyecto Integrado. De
 
 Puedes acceder a cualquiera de ellos en las siguientes secciones de la Wiki:
 
-1. [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Doc_PI] (Documentación del Proyecto)
-2. [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Despliegue] (Manual de Despliegue/Instalación)
-3. [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Usuario] (Manual de usuario Si fuera necesario)
+1. [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Doc_PI](Documentación del Proyecto)
+2. [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Despliegue](Manual de Despliegue/Instalación)
+3. [https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Usuario](Manual de usuario Si fuera necesario)
 
 
