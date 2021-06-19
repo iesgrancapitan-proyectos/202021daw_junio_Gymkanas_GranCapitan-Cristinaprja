@@ -1,7 +1,7 @@
 
 <?php $__env->startSection("titulo-pagina", "Grupos de Usuarios"); ?>
 <?php $__env->startSection('contenido'); ?>
-<p><a href="/admin/add-user-group"><button clas="btn btn-primary btn-sm">Nuevo grupo de usuario</button></a></p>
+<p style="text-align: center"><a href="/admin/add-user-group"><button type="button" class="btn btn-primary">Nuevo grupo de usuario</button></a></p>
 <table class="table">
     <thead>
         <tr>

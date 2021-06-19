@@ -1,7 +1,7 @@
 
 <?php $__env->startSection("titulo-pagina", "Test"); ?>
 <?php $__env->startSection('contenido'); ?>
-<p><a href="/admin/add-test"><button clas="btn btn-primary btn-sm">Nueva prueba</button></a></p>
+<p style="text-align: center"><a href="/admin/add-test"><button type="button" class="btn btn-primary">Nueva prueba</button></a></p>
 <table class="table">
     <thead>
         <tr>
@@ -35,7 +35,7 @@
                     No
                 <?php endif; ?>
             </td>
-            <td><button class="btn btn-success btn-sm"><a href="/admin/tests/<?php echo e($test->id); ?>">Editar</a></button></td>
+            <td><button class="btn btn-success btn-sm"><a href="/admin/tests/edit-view/<?php echo e($test->id); ?>">Editar</a></button></td>
            
         </tr>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

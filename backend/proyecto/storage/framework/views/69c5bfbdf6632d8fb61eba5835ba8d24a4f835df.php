@@ -1,11 +1,10 @@
     
     <?php $__env->startSection("titulo-pagina", "Grupos"); ?>
     <?php $__env->startSection('contenido'); ?>
-    <p><a href="add-group"><button clas="btn btn-primary btn-sm">Nueva Grupo</button></a></p>
+    <p style="text-align: center"><a href="add-group"><button type="button" class="btn btn-primary">Nuevo Grupo</button></a></p>
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Descripcion</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
@@ -14,7 +13,6 @@
         <tbody>
             <?php $__currentLoopData = $groups; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $g): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <tr>
-                <td><?php echo e($g->id); ?></td>
                 <td><?php echo e($g->description); ?></td>
                 <td><button class="btn btn-warning btn-sm"><a href="/admin/groups/edit-view/<?php echo e($g->id); ?>">Editar</a></button></td>
                 <td>

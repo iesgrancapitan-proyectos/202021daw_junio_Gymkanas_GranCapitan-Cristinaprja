@@ -1,7 +1,7 @@
 
 <?php $__env->startSection("titulo-pagina", "Participantes"); ?>
 <?php $__env->startSection('contenido'); ?>
-<p><a href="add-participant"><button clas="btn btn-primary btn-sm">Nuevo Participante</button></a></p>
+<p style="text-align: center"><a href="add-participant"><button type="button" class="btn btn-primary">Nuevo Participante</button></a></p>
 <table class="table">
     <thead>
         <tr>

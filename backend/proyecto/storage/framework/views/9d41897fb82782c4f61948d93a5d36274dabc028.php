@@ -17,8 +17,7 @@
             <td><?php echo e($gymkana->name); ?></td>
             <td><?php echo e($gymkana->description); ?></td>
             <td><?php echo e(sizeof(DB::table('tests')->where('id_gymkana', $gymkana->id)->get())); ?></td>
-            <td><button class="btn btn-success btn-sm"><a href="/admin/tests/edit-view/<?php echo e($gymkana->id); ?>">Ver Pruebas</a></button></td>
-           
+            <td><button class="btn btn-success btn-sm"><a href="/admin/tests/<?php echo e($gymkana->id); ?>">Ver Pruebas</a></button></td>           
         </tr>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </tbody>

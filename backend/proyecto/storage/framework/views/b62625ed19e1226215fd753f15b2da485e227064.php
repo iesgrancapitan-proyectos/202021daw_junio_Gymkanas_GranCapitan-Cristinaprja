@@ -1,14 +1,7 @@
 
 <?php $__env->startSection("titulo-pagina", "Usuarios"); ?>
 <?php $__env->startSection('contenido'); ?>
-<p><a href="add-user"><button clas="btn btn-primary btn-sm">Nuevo Usuario</button></a></p>
-<div class="col-8">
-    <div class="input-group">
-        <input type="text" class="form-control" id="texto" placeholder="Ingrese nombre">
-        <div class="input-group-append"><span class="input-group-text">Buscar</span></div>
-    </div>
-    <div id="resultados" class="bg-light border"></div>
-</div>
+<p style="text-align: center"><a href="add-user"><button type="button" class="btn btn-primary">Nuevo Usuario</button></a></p>
 <table class="table">
     <thead>
         <tr>

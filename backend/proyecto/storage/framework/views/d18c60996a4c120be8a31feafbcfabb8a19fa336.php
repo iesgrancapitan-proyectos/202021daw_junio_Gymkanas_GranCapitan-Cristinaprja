@@ -1,7 +1,7 @@
 
 <?php $__env->startSection("titulo-pagina", "Gymkanas"); ?>
 <?php $__env->startSection('contenido'); ?>
-<p><a href="add-gymkana"><button clas="btn btn-primary btn-sm">Nueva Gymkana</button></a></p>
+<p style="text-align: center"><a href="add-gymkana"><button type="button" class="btn btn-primary">Nueva Gymkana</button></a></p>
 <table class="table">
     <thead>
         <tr>
