@@ -13,6 +13,6 @@ Puedes acceder a cualquiera de ellos en las siguientes secciones de la Wiki:
 
 1. [Documentación del Proyecto](https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Doc_PI)
 2. [Manual de Despliegue/Instalación](https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Despliegue)
-3. [Manual de usuario Si fuera necesario](https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Usuario)
+3. [Manual de usuario](https://github.com/iesgrancapitan-proyectos/202021daw_junio_nombrepi-Cristinaprja/wiki/Manual_Usuario)
 
 
