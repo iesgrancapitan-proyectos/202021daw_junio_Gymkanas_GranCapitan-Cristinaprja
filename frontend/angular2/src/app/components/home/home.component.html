@@ -15,21 +15,18 @@
           (click)="drawer.toggle()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        
-          <span><a class="title" href="/home">Gymkanas Gran Capitán</a></span>
-          <span class="example-spacer"></span>
-          <span *ngIf="logued">
-            <!-- <span>Hola {{name}}</span> -->
-            <img mat-card-sm-avatar class="imagen" src="{{profilePhoto}}">
-            <button mat-raised-button color="accent" (click)="authService.logout()">Cerrar Sesion</button>
-          </span>
-        
+        <span><a class="title" href="/home">Gymkanas Gran Capitán</a></span>
+        <span class="example-spacer"></span>
+        <span *ngIf="logued">
+          <img mat-card-sm-avatar class="imagen" src="{{profilePhoto}}">
+          <button mat-raised-button color="accent" (click)="authService.logout()">Cerrar Sesion</button>
+        </span>
       </mat-toolbar>
       <!-- Add Content Here -->
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
   <mat-card *ngIf="logued">
-    <p>Bienvenido Gymkanas Gran Capitán</p>
+    <p>Bienvenid@ Gymkanas Gran Capitán</p>
   </mat-card>
   

@@ -12,15 +12,15 @@ export class AppComponent implements OnDestroy, OnInit{
   ngOnInit(){
   }
   ngOnDestroy(): void {
-    localStorage.removeItem("email");
-    localStorage.removeItem("profilePhoto");
+  //   localStorage.removeItem("email");
+  //   localStorage.removeItem("profilePhoto");
   }
-  @HostListener('window:unload', ['$event'])unloadHandler(event){
-    localStorage.removeItem("email");
-    localStorage.removeItem("profilePhoto");
-  }
-  @HostListener('window:beforeunload', ['$event'])beforeUnloadHandler(event){
-    localStorage.removeItem("email");
-    localStorage.removeItem("profilePhoto");
-  }
+  // @HostListener('window:unload', ['$event'])unloadHandler(event){
+  //   localStorage.removeItem("email");
+  //   localStorage.removeItem("profilePhoto");
+  // }
+  // @HostListener('window:beforeunload', ['$event'])beforeUnloadHandler(event){
+  //   localStorage.removeItem("email");
+  //   localStorage.removeItem("profilePhoto");
+  // }
 }

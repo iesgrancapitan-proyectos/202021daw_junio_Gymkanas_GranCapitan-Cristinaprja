@@ -59,8 +59,7 @@ export class TestsComponent extends HomeComponent implements OnInit {
         this.score+=res[0].score;
       }
       if(this.answer == this.tests.length){
-          console.log("has terminado");
-          this.router.navigate([`/result/${this.score}/${this.checkup}`]);
+        this.router.navigate([`/result/${this.score}/${this.checkup}`]);
       }
     }).catch(() => {});
   }
