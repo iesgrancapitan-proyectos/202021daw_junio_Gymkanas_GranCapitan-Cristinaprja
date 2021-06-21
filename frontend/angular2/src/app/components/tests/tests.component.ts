@@ -47,6 +47,7 @@ export class TestsComponent extends HomeComponent implements OnInit {
     this.router.navigate([`/test/${test.id}`]);
   }
   getResponses(test:Test){
+    this.checkup = false;
     this.dataService.getResponsesByIdTest(this.idGroup, test.id).toPromise().
     then(res => {
       if(res.length > 0){
@@ -55,7 +56,6 @@ export class TestsComponent extends HomeComponent implements OnInit {
       if(res[0].checkup == 1){
         this.checkup = true;
       }else{
-        this.checkup = false;
         this.score+=res[0].score;
       }
       if(this.answer == this.tests.length){

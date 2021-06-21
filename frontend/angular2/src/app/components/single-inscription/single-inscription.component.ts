@@ -39,7 +39,7 @@ export class SingleInscriptionComponent extends HomeComponent implements OnInit 
     });
     this.userService.getIdGroup(this.id).subscribe(res => {
       res.forEach(element => {
-        this.userService.getGroupDescription(element.id).subscribe(group => {
+        this.userService.getGroupDescription(element.id_group).subscribe(group => {
           this.groups.push(group);
         })
       });

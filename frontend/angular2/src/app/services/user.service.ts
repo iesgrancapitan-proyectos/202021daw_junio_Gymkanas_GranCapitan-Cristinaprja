@@ -64,4 +64,8 @@ export class UserService {
     const path = `${this.api}/getparticipantbyid/${id}`;
     return this.http.get<any>(path);
   }
+  getParticipantByData(id_gymkana_instance:number, id_group:number){
+    const path = `${this.api}/getparticipantbydata/${id_gymkana_instance}/${id_group}`;
+    return this.http.get<any>(path);
+  }
 }

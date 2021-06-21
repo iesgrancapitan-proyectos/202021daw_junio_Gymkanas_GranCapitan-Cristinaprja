@@ -20,6 +20,7 @@ export class SingleTestComponent extends HomeComponent implements OnInit {
   @Output() valueResponse:EventEmitter<boolean> = new EventEmitter<boolean>();
   @Input() fromTest = true;
   id:number;
+  idTest:number;
   form: FormGroup;
   myName:string= "";
   myDescription:string= "";
@@ -36,9 +37,10 @@ export class SingleTestComponent extends HomeComponent implements OnInit {
     }
     
   ngOnInit(): void {
+    console.log("entrando en single test");
+    
     this.createForm();
-    this.showSingleTest();
-
+    this.showSingleTest();    
   }
 
   addNumTest(){
@@ -50,14 +52,18 @@ export class SingleTestComponent extends HomeComponent implements OnInit {
       response:['', Validators.required]
     })
   }
+
   showSingleTest(){
     this.route.params.subscribe(params => {
-      if(params['id']){
+      if(params['id']){        
         this.dataService.getSingleTest(params['id']).subscribe(res => {
-          this.test= res[0];
+          this.test = res[0];          
           this.myName = this.test.name;
           this.myDescription = this.test.description;
-          this.id = this.test.id;
+          this.idTest = this.test.id;
+          this.id = this.test.id_gymkana;
+          console.log(this.id);
+          
           if(this.test.photo !== ''){
             this.photo = true;
           }else{
@@ -75,12 +81,17 @@ export class SingleTestComponent extends HomeComponent implements OnInit {
         data.forEach(data => {
           this.userService.getIdParticipant(data.id_group).subscribe(participant => {
             participant.forEach(part => {
+              console.log(id_gymkana);
+              console.log(part.id);
+              
               this.userService.getInscription(id_gymkana, part.id).subscribe(inscription => {
+                console.log(inscription);
+                
                 if(inscription.length == 1){
                   this.userService.getParticipantById(inscription[0].id_participant).subscribe(res => {
                     if(res){
                       localStorage.setItem("idGroup", res[0].id_group);
-                      this.dataService.storeAnwser(parseInt(localStorage.getItem("idGroup")) , this.id, id_gymkana, this.answer, this.test);
+                      this.dataService.storeAnwser(parseInt(localStorage.getItem("idGroup")) , this.idTest, id_gymkana, this.answer, this.test);
                       this.router.navigate([`/tests/${id_gymkana}`]);
                       this.addNumTest();
                     }

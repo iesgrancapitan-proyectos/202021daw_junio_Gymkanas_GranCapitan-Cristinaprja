@@ -19,12 +19,12 @@ export class DataService {
   ) { }
   
   getAllActivesGymkanas(){
-    const path = `${this.api}/gymkanas_instances_active`;
+    const path = `${this.api}/gymkanas_instances_future`;
     return this.http.get<any>(path);
   }
 
   getAllFutureGymkanas(){
-    const path = `${this.api}/gymkanas_instances_future`;
+    const path = `${this.api}/gymkanas_instances_active`;
     return this.http.get<any>(path);
   }
   getTests(id:string){

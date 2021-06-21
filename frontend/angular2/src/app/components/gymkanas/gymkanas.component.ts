@@ -30,7 +30,8 @@ export class GymkanasComponent extends HomeComponent implements OnInit {
   }
 
   createTable(){
-    this.dataService.getAllActivesGymkanas().subscribe(res => {
+    // this.dataService.getAllActivesGymkanas().subscribe(res => {
+    this.dataService.getAllFutureGymkanas().subscribe(res => {
       this.gymkanas = res;
       this.dataSource = new MatTableDataSource<Gymkana>(this.gymkanas);
     });

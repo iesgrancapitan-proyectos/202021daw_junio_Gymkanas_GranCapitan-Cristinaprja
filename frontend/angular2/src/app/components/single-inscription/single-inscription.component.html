@@ -10,7 +10,7 @@
         <mat form-field>
             <mat-label>Grupo: </mat-label>    
             <select formControlName="group" id="group">
-                <option *ngFor="let group of groups; index as i" value="{{group[0].id}}">{{group[0].description}}</option>
+                <option *ngFor="let group of groups; index as i" value="{{group[i].id}}">{{group[i].description}}</option>
             </select>
         </mat>
     </p>
@@ -20,5 +20,5 @@
             <textarea id="observations" matInput formControlName="observations"></textarea>
         </mat-form-field>
     </p>
-    <button mat-raised.button color="primary" type="submit" (click)="signUp()">Inscribirme</button>
+    <button mat-raised-button color="primary" type="submit" (click)="signUp()">Inscribirme</button>
 </form>

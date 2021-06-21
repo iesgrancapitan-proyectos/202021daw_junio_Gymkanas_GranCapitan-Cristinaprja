@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ResultComponent extends HomeComponent implements OnInit {
   score:number;
-  checkup:boolean;
+  checkup:boolean = false;
   constructor(
     public authService:AuthService,
     public userService:UserService,
@@ -31,12 +31,7 @@ export class ResultComponent extends HomeComponent implements OnInit {
       if(params['score']){
         this.score = params.score;
       }
-      if(params['checkup'] == true){
-        this.checkup = true;
-      }else{
-        this.checkup = false;
-      }
+      this.checkup = params['checkup'];
     });
   }
-
 }

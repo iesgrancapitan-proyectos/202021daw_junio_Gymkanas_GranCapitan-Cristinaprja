@@ -5,8 +5,8 @@
         <p>
             Puntuación: {{score}}
         </p>
-        <p *ngIf="checkup == true">
-            Espere a que el organizador verifique algunas pruebas
-        </p>
+        <div *ngIf="checkup">
+            <p>Espere a que el organizador verifique algunas pruebas</p>
+        </div>
     </mat-card-content>
 </mat-card>
